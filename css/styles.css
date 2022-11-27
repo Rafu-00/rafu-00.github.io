@@ -10,6 +10,9 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500&display=swap');
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -78,15 +81,20 @@
 
 body {
   margin: 0;
-  font-family: var(--bs-body-font-family);
+  font-family: 'Roboto', sans-serif;
   font-size: var(--bs-body-font-size);
-  font-weight: var(--bs-body-font-weight);
+  font-weight: 400;
   line-height: var(--bs-body-line-height);
   color: var(--bs-body-color);
   text-align: var(--bs-body-text-align);
-  background-color: var(--bs-body-bg);
+  background-color: #edeae5;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.active{
+  color: white;
+  font-weight: bold;
 }
 
 hr {
@@ -235,11 +243,11 @@ sup {
 }
 
 a {
-  color: #0d6efd;
+  color: #3f8899;
   text-decoration: underline;
 }
 a:hover {
-  color: #0a58ca;
+  color: #3f89997a;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -3942,7 +3950,7 @@ textarea.form-control-lg {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color: #0d6efd;
+  color: rgb(255, 255, 255);
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
@@ -3952,7 +3960,7 @@ textarea.form-control-lg {
   }
 }
 .nav-link:hover, .nav-link:focus {
-  color: #0a58ca;
+  color: #ffffff;
 }
 .nav-link.disabled {
   color: #6c757d;
@@ -3981,9 +3989,9 @@ textarea.form-control-lg {
 }
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
-  color: #495057;
+  color: #ffffff;
   background-color: #fff;
-  border-color: #dee2e6 #dee2e6 #fff;
+  border-color: #ffffff #ffffff #fff;
 }
 .nav-tabs .dropdown-menu {
   margin-top: -1px;
@@ -3999,7 +4007,7 @@ textarea.form-control-lg {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #0d6efd;
+  background-color: #ffffff;
 }
 
 .nav-fill > .nav-link,
@@ -4035,6 +4043,7 @@ textarea.form-control-lg {
   justify-content: space-between;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  background-color: #0F292F;
 }
 .navbar > .container,
 .navbar > .container-fluid,
@@ -4454,7 +4463,7 @@ textarea.form-control-lg {
 }
 .navbar-light .navbar-nav .show > .nav-link,
 .navbar-light .navbar-nav .nav-link.active {
-  color: rgba(0, 0, 0, 0.9);
+  color: rgb(255, 255, 255);
 }
 .navbar-light .navbar-toggler {
   color: rgba(0, 0, 0, 0.55);
